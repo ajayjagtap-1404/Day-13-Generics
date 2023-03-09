@@ -18,7 +18,11 @@ public class Generics<T extends Comparable<T>> {
             if (input[i].compareTo(max) > 0)
                 max = input[i];
         }
-        System.out.println("The maximum Value is : " + max);
+        printMax(max);
         return max;
+    }
+
+    public void printMax(T max) {
+        System.out.println("Max value is :" +max);
     }
 }
